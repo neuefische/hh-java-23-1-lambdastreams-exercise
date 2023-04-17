@@ -12,7 +12,7 @@ public class IsNarcissistic {
         1938 = (1^4 + 6^4 + 5^4 + 2^4) = 1 + 1296 + 625 + 16; 1938 ist also eine narzisstische Zahl;
      */
 
-    public static boolean isNarcissistic(int number) {
+    public static boolean isNarcissistic(int n) {
 
         return false;
     }

@@ -1,7 +1,3 @@
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 public class CountingDuplicates {
 
     /*
@@ -19,7 +15,7 @@ public class CountingDuplicates {
         "AAABBBBAAA" -> a wiederholt sich, b wiederholt sich -> gibt 2 wieder;
      */
 
-    public static int duplicateCount(String text) {
+    public static int duplicateCount(String str) {
         // This is where your code goes!
 
         return 0;
