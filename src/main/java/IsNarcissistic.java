@@ -1,6 +1,6 @@
 
 public class IsNarcissistic {
-
+// testetst
     /*
     In dieser Übung wird von dir erwartet eine Methode zu implementieren, die überprüft, ob eine Zahl in die Kategorie
     der "Narzisstischen Zahlen" (auch Armstrong-Zahlen genannt) gehört. Eine narzisstische Zahl,
