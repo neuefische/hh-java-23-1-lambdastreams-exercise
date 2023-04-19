@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Vowels {
 
@@ -15,6 +16,8 @@ public class Vowels {
     public static int getVowelCount(String str) {
         //This is where your code goes!
 
-        return 0;
+        return (int) Arrays.stream(str.split(""))
+                .filter(string -> string.matches("[aeiou]"))
+                .count();
     }
 }

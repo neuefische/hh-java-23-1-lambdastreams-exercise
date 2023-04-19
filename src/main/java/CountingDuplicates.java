@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class CountingDuplicates {
 
     /*
@@ -18,6 +22,10 @@ public class CountingDuplicates {
     public static int duplicateCount(String str) {
         // This is where your code goes!
 
-        return 0;
+        List<String> list = Arrays.asList(str.toLowerCase().split(""));
+        return (int) list.stream()
+                .filter(s -> Collections.frequency(list, s) > 1)
+                .distinct()
+                .count();
     }
 }

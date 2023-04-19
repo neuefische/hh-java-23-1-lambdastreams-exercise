@@ -15,6 +15,6 @@ public class Isogram {
     public static boolean isIsogram(String str) {
         //This is where your code goes!
 
-        return false;
+        return str.length() == str.toLowerCase().chars().distinct().count();
     }
 }

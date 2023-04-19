@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class IsNarcissistic {
 
@@ -9,11 +10,15 @@ public class IsNarcissistic {
 
     Beispiel:
         153 = (1^3 + 5^3 + 3^3) = 1 + 125 + 27; 153 ist also eine narzisstische Zahl;
-        1938 = (1^4 + 6^4 + 5^4 + 2^4) = 1 + 1296 + 625 + 16; 1938 ist also eine narzisstische Zahl;
+        1938 = (1^4 + 9^4 + 3^4 + 8^4) = 1 + 6561 + 81 + 4096 = 10739, 1938 ist also keine narzisstische Zahl;
      */
 
     public static boolean isNarcissistic(int n) {
 
-        return false;
+        int length = String.valueOf(n).length();
+        return n == Arrays.stream(String.valueOf(n).split(""))
+                .mapToInt(Integer::parseInt)
+                .mapToDouble(m -> Math.pow(m, length))
+                .sum();
     }
 }

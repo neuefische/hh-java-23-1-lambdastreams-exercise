@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class SquareDigit {
     /*
@@ -14,6 +15,13 @@ public class SquareDigit {
     public int squareDigits(int n) {
         //This is where your code goes!
 
-        return 0;
+        String result = Arrays.stream(Integer.toString(n).split(""))
+                .map(Integer::parseInt)
+                .map(num -> (int) Math.pow(num, 2))
+                .map(String::valueOf)
+                .collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
+                .toString();
+
+        return Integer.parseInt(result);
     }
 }
